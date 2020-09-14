@@ -1,0 +1,91 @@
+body{
+    background-color:hsl(240, 78%, 98%);
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: hsl(233, 13%, 49%);
+}
+.backgroundTop{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+.backgroundBottom{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+.custom-control-label:hover{
+    cursor: pointer;
+}
+.custom-control-label::before:hover{
+    background-color:linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-color:hsl(236, 72%, 79%);
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: hsl(237, 63%, 64%);
+    border-color:hsl(237, 63%, 64%);
+    outline: 0;
+    box-shadow: none;
+}
+.custom-control-input:not(checked)~.custom-control-label::before {
+    background-color: hsl(237, 63%, 64%);
+    border-color:hsl(237, 63%, 64%);
+    outline: 0;
+    box-shadow: none;
+}
+.custom-control-input:not(checked)~.custom-control-label::after{
+    background-color:white;
+    box-shadow:none;
+}
+#viewPlan{
+    color:hsl(233, 13%, 49%);
+    font-size: 15px;
+}
+.annualToggle, .monthToggle{
+    color:hsl(234, 14%, 74%);
+    font-size: 15px;
+}
+.card{
+    border-radius:15px;
+    box-shadow: 2px 2px 2px 2px hsla(234, 14%, 74%, 0.295);
+}
+.card-1 h2{
+    color:hsl(233, 13%, 33%);
+}
+.card-1 h3, .card-1 p{
+    color:hsl(233, 13%, 49%);
+}
+.btnColorBlue{
+    background:linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color:white;
+    font-size:15px;
+}
+.btnColorBlue:hover{
+    background:white;
+    color:hsl(237, 63%, 64%);
+    border:1px solid hsl(237, 63%, 64%);
+}
+.card-2{
+    background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color:white !important;
+}
+.btnColorWhite{
+    background:white;
+    color:hsl(237, 63%, 64%);
+    font-size:15px;
+}
+.btnColorWhite:hover{
+    background:hsl(237, 63%, 64%);
+    color:white;
+    border:1px solid white;
+}
+.card-3 h2{
+    color:hsl(233, 13%, 33%);
+}
+.card-3 h3, .card-3 p{
+    color:hsl(233, 13%, 49%);
+}

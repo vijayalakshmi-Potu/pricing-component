@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Skill Safari | Pricing component with toggle</title>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+  <script defer="" src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+  
+    <img src="images/bg-top.svg" alt="topBackground" class="backgroundTop img-fluid">
+    <div class="container">
+      <header class="mt-5">
+        <h1 class="text-center mb-4 text-dark">Our Pricing</h1>
+        <div class="justify-content-center d-flex justify-space-between">
+          <span class="annualToggle mx-2">Annually</span>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input toggleSwitch" id="customSwitch1"  onclick="changePrice()">
+            <label class="custom-control-label" for="customSwitch1"></label>
+          </div>
+          <span class="monthToggle mx-2">Monthly</span>
+        </div>
+      </header>
+    
+      <p class="text-center mt-3" id="viewPlan"></p>
+      <div class="row no-gutters py-5">
+  
+        <div class="col-12 col-md-4">
+          <div class="card card-1 text-center py-3 my-4">
+            <h3 class="card-title text-center align-items-center mt-3">Basic</h3>
+            <div class="card-body">
+              <h2 id="basic" class="display-3 text-center py-3 border-bottom">&dollar; 199.99</h2>
+              <p class="text-center py-2 border-bottom">500 GB Storage</p>
+              <p class="text-center py-2 border-bottom">2 Users Allowed</p>
+              <p class="text-center py-2 border-bottom">Send up to 3 GB</p>
+              <button type="button" class="btn btn-block btn-lg btnColorBlue">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card card-2 text-center py-5">
+            <h3 class="card-title text-center align-items-center mt-3">Professional</h3>
+            <div class="card-body">
+              <h2 id="professional" class="display-3 text-center py-3 border-bottom">&dollar; 249.99</h2>
+              <p class="text-center py-2 border-bottom">1 TB Storage</p>
+              <p class="text-center py-2 border-bottom">5 Users Allowed</p>
+              <p class="text-center py-2 border-bottom">Send up to 10 GB</p>
+              <button type="button" class="btn btn-block btn-lg btnColorWhite">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card card-3 text-center py-3 my-4">
+            <h3 class="card-title text-center align-items-center mt-3">Master</h3>
+            <div class="card-body">
+              <h2 id="master" class="display-3 text-center py-3 border-bottom">&dollar; 399.99</h2>
+              <p class="text-center py-2 border-bottom">2 TB Storage</p>
+              <p class="text-center py-2 border-bottom">10 Users Allowed</p>
+              <p class="text-center py-2 border-bottom">Send up to 20 GB</p>
+              <button type="button" class="btn btn-block btn-lg btnColorBlue">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+  
+ </div>
+    </div>
+
+    <img src="images/bg-bottom.svg" alt="bottomBackground" class="backgroundBottom img-fluid">
+
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script src="JS/prices.js"></script>
+</body>
+</html>
